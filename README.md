@@ -1,4 +1,5 @@
 # wiki-automation
+
 Action to sync your WIKI with one of the folders in your repository.
 
 ## Use case
@@ -12,19 +13,6 @@ Action to sync your WIKI with one of the folders in your repository.
 | docs-folder | Yes | The folder to be sync-ed with your repository's Wiki |
 | user-name | No | Your `git config user.name` (Default: `BOT`) |
 | user-email | No | Your `git config user.email` (Default: `bot@bot.com` |
-
-  repository:
-    description: Repository name
-    required: true
-  docs-folder:
-    description: Docs folder
-    required: true
-  user-name:
-    description: Git user.name. Used while pushing on Wiki's repo
-    default: BOT
-  user-mail: 
-    description: Git user.email. Used while pusing on Wiki's repo
-    default: bot@bot.com
 
 ## Example workflows
 
