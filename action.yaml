@@ -1,0 +1,52 @@
+name: Sync wiki
+author: Victor Santiago
+description: |
+  This actions sets one of repository folders (say ~/docs) as source for your 
+  repository's Wiki page 
+
+inputs:
+  token:
+    description: PAT or GITHUB_TOKEN
+    required: true
+  repository:
+    description: Repository name
+    required: true
+  folder:
+    description: Docs folder
+    required: true
+
+runs:
+  using: "composite"
+  steps:
+    - uses: actions/checkout@v3
+      with:
+        fetch_depth: 0
+
+    - id: tstamp
+      run: |
+        echo "NOW=$( date +%s).wiki" >> GITHUB_OUTPUTS
+      shell: bash
+
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+        repository: ${{ inputs.repository }}.wiki
+        path: ${{ steps.temp.outputs.NOW }}.wiki
+        token: ${{ inputs.token }}
+
+    - name: Update
+      working-directory: ${{ steps.temp.outputs.NOW }}.wiki
+      run: |
+        git config user.name "BOT"
+        git config user.email "<>"
+
+        cp ../${{ inputs.folder }}/* .
+
+        git add --all
+        git commit -m "test" --allow-empty
+        git push
+      shell: bash
+
+brands:
+  icon: archive
+  color: purple
