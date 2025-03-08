@@ -9,7 +9,7 @@ Action to sync your WIKI with one of the folders in your repository.
 | Name | Required | Description |
 | ---  | ---      | ---         |
 | token | Yes | GITHUB_TOKEN or PAT with appropiate permissions |
-| repository | Yes | Use `${{ github.repository}}` |
+| repository | Yes | Use `${{ github.repository }}` |
 | docs-folder | Yes | The folder to be sync-ed with your repository's Wiki |
 | user-name | No | Your `git config user.name` (Default: `BOT`) |
 | user-email | No | Your `git config user.email` (Default: `bot@bot.com` |
