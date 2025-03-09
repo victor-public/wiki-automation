@@ -1,4 +1,4 @@
-name: Sync wiki
+name: wiki-automation
 author: Victor Santiago
 description: |
   This actions sets one of repository folders (say ~/docs) as source for your 
