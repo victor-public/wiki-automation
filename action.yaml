@@ -1,4 +1,4 @@
-name: wiki-automation
+name: Automate your Wiki pages
 author: Victor Santiago
 description: |
   This actions sets one of repository folders (say ~/docs) as source for your 
