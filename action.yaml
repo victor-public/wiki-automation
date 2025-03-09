@@ -49,8 +49,8 @@ runs:
         cp ../${{ inputs.docs-folder }}/* .
 
         git add --all
-        git commit -m "test" --allow-empty
-        git push
+        git commit -m "docs: update wiki" --allow-empty
+        git push --force
       shell: bash
 
 brands:
