@@ -1,8 +1,7 @@
 name: Automate your Wiki pages
 author: Victor Santiago
 description: |
-  This actions sets one of repository folders (say ~/docs) as source for your 
-  repository's Wiki page 
+  Sync your repository's Wiki pages with the contents of one of your folders.
 
 inputs:
   token:

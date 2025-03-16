@@ -21,6 +21,15 @@ By using this action we can automate [Github Wiki management](https://docs.githu
 
 And you are done.
 
+### :eyes: How to make it look good?
+
+Remember to include two special `.md` files at your docs folder: 
+
+- `_Sidebar.md`: your Wiki's side-bar menu.
+- `_Footer.md`: your Wiki's footer
+
+All [Github's emojis](https://gist.github.com/rxaviers/7360908) are allowed.
+
 ## How to use this action?
 
 These are the action's available parameters:
