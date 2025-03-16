@@ -17,7 +17,7 @@ inputs:
   user-name:
     description: Git user.name. Used while pushing on Wiki's repo
     default: BOT
-  user-mail: 
+  user-email: 
     description: Git user.email. Used while pusing on Wiki's repo
     default: bot@bot.com
 
@@ -54,5 +54,5 @@ runs:
       shell: bash
 
 brands:
-  icon: archive
+  icon: airplay
   color: purple
